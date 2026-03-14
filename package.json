@@ -1,6 +1,6 @@
 {
   "name": "modiji-bhojyam-failure-sound",
-  "displayName": "Test Failure Sound",
+  "displayName": "Modiji Bhojyam Failure Sound",
   "description": "Plays a sound whenever any test cases fail in the VS Code integrated terminal — works with all languages and frameworks.",
   "version": "1.0.0",
   "publisher": "OmVerma",
