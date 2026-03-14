@@ -3,7 +3,7 @@
   "displayName": "Test Failure Sound",
   "description": "Plays a sound whenever any test cases fail in the VS Code integrated terminal — works with all languages and frameworks.",
   "version": "1.0.0",
-  "publisher": "YOUR-PUBLISHER-ID",
+  "publisher": "OmVerma",
   "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.93.0"
