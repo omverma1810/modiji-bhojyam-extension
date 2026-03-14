@@ -1,0 +1,69 @@
+{
+  "name": "test-failure-sound",
+  "displayName": "Test Failure Sound",
+  "description": "Plays a sound whenever any test cases fail in the VS Code integrated terminal — works with all languages and frameworks.",
+  "version": "1.0.0",
+  "publisher": "YOUR-PUBLISHER-ID",
+  "icon": "media/icon.png",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "test",
+    "sound",
+    "audio",
+    "fail",
+    "notification",
+    "jest",
+    "pytest",
+    "mocha",
+    "testing"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "testFailureSound.testSound",
+        "title": "Test Failure Sound: Play Test Sound"
+      }
+    ],
+    "configuration": {
+      "title": "Test Failure Sound",
+      "properties": {
+        "testFailureSound.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable or disable the test failure sound."
+        },
+        "testFailureSound.volume": {
+          "type": "number",
+          "default": 1.0,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Playback volume (0.0 = silent, 1.0 = full volume)."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.93.0",
+    "@types/node": "^20.x",
+    "typescript": "^5.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/test-failure-sound"
+  },
+  "license": "MIT"
+}
