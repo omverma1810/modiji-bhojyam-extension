@@ -8,5 +8,9 @@ vsc-extension-quickstart.md
 **/.eslintrc.json
 **/*.map
 **/*.ts
-!node_modules/@vscode/vsce
 node_modules/**
+.venv/**
+.pytest_cache/**
+test-samples/**
+modi-ji-bhojyam.mp3
+*.vsix
